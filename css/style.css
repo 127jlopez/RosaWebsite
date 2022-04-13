@@ -29,15 +29,31 @@ body{
 }
 
 .navbar{
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    background-color: black; /* change to desired color */
+    top: 0vw;
     display: flex;
-    justify-content: center;
-    z-index: 9;
-    transition: .5s;
+    position: absolute;
+}
+.logo-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+.navbar > a {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+
+    display: fixed;
+    position: relative;
+    left: 30%; /* 1% for links to be left side, 30% for center*/
 }
 
 .navbar.bg{
@@ -76,7 +92,7 @@ body{
     display: flex;
     position: absolute;
     right: 5vw;
-    top: 50%;
+    top: 2.5vw;
     transform: translateY(-50%);
 }
 
