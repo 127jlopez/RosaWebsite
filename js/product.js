@@ -1,3 +1,4 @@
+// Grabs the json file and adds it to html
 fetch("./JSONFiles/products.json")
   .then((response) => response.json())
   .then((data) => productHTMLGrid(data))
@@ -11,6 +12,7 @@ function productHTMLGrid(jsonData) {
   let oldelem = document.querySelector("script#replace_with_grid");
   oldelem.parentNode.removeChild(oldelem);
 
+  // places a product item into html
   for (let i = 0; i < JsonKeys.length; i++) {
     promises.push(
       fetch("./html/productTemplate.html")
