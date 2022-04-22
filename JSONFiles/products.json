@@ -1,0 +1,40 @@
+{
+ "Capes": [
+  {
+   "No": "1",
+   "ahref": "path/to/something",
+   "imgsrc1": "/images/Cape1/first.png",
+   "imgsrc2": "/images/Cape1/middle.png",
+   "imgsrc3": "/images/Cape1/last.png",
+   "titleh3": "Dark Man Red Cape",
+   "priceh3": "$8.99"
+  },
+  {
+    "No": "2",
+    "ahref": "path/to/something",
+    "imgsrc1": "/images/Cape2/first.png",
+    "imgsrc2": "/images/Cape2/middle.png",
+    "imgsrc3": "/images/Cape2/last.png",
+    "titleh3": "White Women Red Cape",
+    "priceh3": "$12.99"
+   },
+   {
+    "No": "3",
+    "ahref": "path/to/something",
+    "imgsrc1": "/images/Cape3/first.png",
+    "imgsrc2": "/images/Cape3/middle.png",
+    "imgsrc3": "/images/Cape3/last.png",
+    "titleh3": "White Family Red Capes",
+    "priceh3": "$80.99"
+   },
+   {
+    "No": "4",
+    "ahref": "path/to/something",
+    "imgsrc1": "/images/Cape4/first.png",
+    "imgsrc2": "/images/Cape4/middle.png",
+    "imgsrc3": "/images/Cape4/last.png",
+    "titleh3": "Docter Cape",
+    "priceh3": "$18.99"
+   }
+   ]
+}

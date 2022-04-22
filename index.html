@@ -2,52 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=S, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Rosa's Website</title>
   </head>
+  <header class="header-section">
+    <h1 class="header-heading"><span>Rosa's</span> quality</h1>
+  </header>
   <body>
-    <div class="image123">
-      <div class="largepicture" >
-        <image id="enlargedphoto" src="/images/1.png" height="500" width="500"/>
-      </div>
-      <div class="imgContainer">
-        <input type="image" onClick="selectPicture('left')" id="left-img" src="/images/1.png" height="150" width="150" />
-      </div>
-        <div class="imgContainer">
-        <input type="image" onClick="selectPicture('middle')" id="middle-img" src="/images/2.png" height="150" width="150" />
-      </div>
-      <div class="imgContainer">
-        <input type="image" onClick="selectPicture('right')" id="right-img" src="/images/3.png" height="150" width="150" />
-        </div>
-      </div>
-      <script>
-        function selectPicture(pictureSelected){
-            let left = document.getElementById('left-img');
-            let middle = document.getElementById('middle-img');
-            let right = document.getElementById('right-img');
-
-            let largePicture = document.getElementById('enlargedphoto')
-
-            if(pictureSelected == 'left'){
-              left.style.border="3px solid #000";
-              middle.style.border="0px solid #000";
-              right.style.border="0px solid #000";
-              largePicture.src = left.src;
-            }else if(pictureSelected == 'middle'){
-              left.style.border="0px solid #000";
-              middle.style.border="3px solid #000";
-              right.style.border="0px solid #000";
-              largePicture.src = middle.src;
-            }else if(pictureSelected == 'right'){
-              left.style.border="0px solid #000";
-              middle.style.border="0px solid #000";
-              right.style.border="3px solid #000";
-              largePicture.src = right.src;
-            }
-        }
-      </script>
-    </div>
+    <script id="replace_with_navbar" src="js/nav.js"></script>
   </body>
 </html>

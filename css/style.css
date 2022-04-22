@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+body{
+    font-family: 'Grape_Nuts', 'Open_Sans';
+    background-color: bisque;
+    --grid-pixel-size: 300px;
+}
+
+.header-section{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-heading{
+    font-size: 100px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.header-heading span{
+    color: #d5be8b;
+}
+
+.navbar{
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    background-color: black; /* change to desired color */
+    top: 0vw;
+    display: flex;
+    position: absolute;
+}
+.logo-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+.navbar > a {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+
+    display: fixed;
+    position: relative;
+    left: 30%; /* 1% for links to be left side, 30% for center*/
+}
+
+.navbar.bg{
+    background: #fff;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.link-item{
+    margin: 10px;
+}
+
+.link{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.navbar.bg .link{
+    color: #000;
+    opacity: 0.5;
+}
+
+.link.active, .link:hover, .navbar.bg .link:hover, .navbar.bg .link.active{
+    opacity: 1;
+}
+
+.user-interactions{
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    top: 2.5vw;
+    transform: translateY(-50%);
+}
+
+.cart, .user{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cart-icon, .user-icon{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.cart-item-count{
+    font-family: 'lato', sans-serif;
+    color: #d5be8b;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: #190c05;
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+}
+
+
+.Grid-Container{
+    display:grid;
+    gap: 1rem;
+    grid: subgrid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+
+.image-container {
+    grid-column: span 2;
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+#image-src{
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+.Price-container{
+    text-align: right;
+}
+.cape-Collection-products{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: var(--grid-pixel-size);
+    height: 830px;
+}
