@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
+
 
 body{
     font-family: 'Grape_Nuts', 'Open_Sans';
+    background-color: bisque;
+    --grid-pixel-size: 300px;
 }
 
 .header-section{
@@ -120,4 +123,38 @@ body{
     position: absolute;
     bottom: -12px;
     left: -12px;
+}
+
+
+.Grid-Container{
+    display:grid;
+    gap: 1rem;
+    grid: subgrid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+
+.image-container {
+    grid-column: span 2;
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+#image-src{
+    width: var(--grid-pixel-size);
+    height: var(--grid-pixel-size);
+}
+.Price-container{
+    text-align: right;
+}
+.cape-Collection-products{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: var(--grid-pixel-size);
+    height: 830px;
 }
