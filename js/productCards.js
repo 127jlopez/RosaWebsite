@@ -15,7 +15,7 @@ function productHTMLGrid(jsonData) {
   // places a product item into html
   for (let i = 0; i < JsonKeys.length; i++) {
     promises.push(
-      fetch("./html/productTemplate.html")
+      fetch("./html/productCardsTemplate.html")
         .then((res) => res.text())
         .then((html) => {
           let parser = new DOMParser();

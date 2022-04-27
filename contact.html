@@ -5,13 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=S, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Rosa's Website</title>
-    <script src="/js/persistentWebAttributes.js"></script>
+    <title>Contact</title>
   </head>
-  <header class="header-section">
-    <h1 class="header-heading"><span>Contact</span> Us</h1>
-  </header>
   <body>
     <script id="replace_with_navbar" src="js/nav.js"></script>
+
+    <div class="Grid-container-individual">
+      <div class="largepicture">
+        <image id="enlargedphoto" src="/images/user.png" />
+      </div>
+      <div class="imgContainerLeft">
+        <input
+          type="image"
+          onClick="selectPicture('left')"
+          id="left-img"
+          src="/images/user.png"
+        />
+      </div>
+      <div class="imgContainerMiddle">
+        <input
+          type="image"
+          onClick="selectPicture('middle')"
+          id="middle-img"
+          src="/images/2.png"
+          height="150px"
+          width="150px"
+        />
+      </div>
+      <div class="imgContainerRight">
+        <input
+          type="image"
+          onClick="selectPicture('right')"
+          id="right-img"
+          src="/images/3.png"
+          height="150px"
+          width="150px"
+        />
+      </div>
+      <div class="Title-container-individual">
+        <h2>Red Cape</h2>
+
+        <h4>
+          This red cape is amazing. Watch this man wear all these capes. What
+          else do you want? money? discount? more capes?
+        </h4>
+      </div>
+      <div class="Price-container-individual">
+        <h2>$8.99</h2>
+        <button class="Button-container-individual">
+          <span>Add To Cart</span>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function selectPicture(pictureSelected) {
+        let left = document.getElementById("left-img");
+        let middle = document.getElementById("middle-img");
+        let right = document.getElementById("right-img");
+
+        let largePicture = document.getElementById("enlargedphoto");
+
+        if (pictureSelected == "left") {
+          left.style.border = "3px solid #000";
+          middle.style.border = "0px solid #000";
+          right.style.border = "0px solid #000";
+          largePicture.src = left.src;
+        } else if (pictureSelected == "middle") {
+          left.style.border = "0px solid #000";
+          middle.style.border = "3px solid #000";
+          right.style.border = "0px solid #000";
+          largePicture.src = middle.src;
+        } else if (pictureSelected == "right") {
+          left.style.border = "0px solid #000";
+          middle.style.border = "0px solid #000";
+          right.style.border = "3px solid #000";
+          largePicture.src = right.src;
+        }
+      }
+    </script>
   </body>
 </html>
