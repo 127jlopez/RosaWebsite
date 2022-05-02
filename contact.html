@@ -4,57 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styleindividualProduct.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Contact</title>
   </head>
   <body>
     <script id="replace_with_navbar" src="js/nav.js"></script>
 
-    <div class="Grid-container-individual">
-      <div class="largepicture">
-        <image id="enlargedphoto" src="/images/user.png" />
+    <div class="Grid-picture-text-container">
+      <div>
+        <div class="Grid-picture-container-individual">
+          <div class="largepicture">
+            <image id="enlargedphoto" src="/images/user.png" />
+          </div>
+          <div class="imgContainerLeft">
+            <input
+              type="image"
+              onClick="selectPicture('left')"
+              id="left-img"
+              src="/images/user.png"
+            />
+          </div>
+          <div class="imgContainerMiddle">
+            <input
+              type="image"
+              onClick="selectPicture('middle')"
+              id="middle-img"
+              src="/images/2.png"
+            />
+          </div>
+          <div class="imgContainerRight">
+            <input
+              type="image"
+              onClick="selectPicture('right')"
+              id="right-img"
+              src="/images/3.png"
+            />
+          </div>
+        </div>
       </div>
-      <div class="imgContainerLeft">
-        <input
-          type="image"
-          onClick="selectPicture('left')"
-          id="left-img"
-          src="/images/user.png"
-        />
-      </div>
-      <div class="imgContainerMiddle">
-        <input
-          type="image"
-          onClick="selectPicture('middle')"
-          id="middle-img"
-          src="/images/2.png"
-          height="150px"
-          width="150px"
-        />
-      </div>
-      <div class="imgContainerRight">
-        <input
-          type="image"
-          onClick="selectPicture('right')"
-          id="right-img"
-          src="/images/3.png"
-          height="150px"
-          width="150px"
-        />
-      </div>
-      <div class="Title-container-individual">
-        <h2>Red Cape</h2>
 
-        <h4>
-          This red cape is amazing. Watch this man wear all these capes. What
-          else do you want? money? discount? more capes?
-        </h4>
-      </div>
-      <div class="Price-container-individual">
-        <h2>$8.99</h2>
-        <button class="Button-container-individual">
-          <span>Add To Cart</span>
-        </button>
+      <div>
+        <div class="Title-container-individual">
+          <h2>Red Cape</h2>
+          <h4>
+            This red cape is amazing. Watch this man wear all these capes. What
+            else do you want? money? discount? more capes?
+          </h4>
+        </div>
+        <div class="Price-container-individual">
+          <h2>$8.99</h2>
+          <input type="number" min="0" value="1" />
+          <button class="Button-container-individual">
+            <span>Add To Cart</span>
+          </button>
+        </div>
       </div>
     </div>
 

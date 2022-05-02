@@ -153,100 +153,14 @@ body{
     text-align: right;
 }
 .cape-Collection-products{
+    margin-top: 100px;
+    margin-left: 450px;
+
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-
+   
     width: var(--grid-pixel-size-collection);
-    height: 830px;
+    grid-auto-rows: minmax(390px, auto);
 }
 
-/* Individual products page*/
-.Grid-container-individual{
-    margin-top: 100px;
-    margin-left: 30%;
-    display: grid;
-
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-
-    width: var(--grid-pixel-size-individual);
-    height: var(--grid-pixel-size-individual);
-
-    position: relative;
-    
-}
-.largepicture{
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-}
-.largepicture img{
-    width: var(--grid-pixel-size-individual);
-    height: var(--grid-pixel-size-individual);
-}
-
-.imgContainerLeft{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.imgContainerLeft input{
-    width: var(--grid-pixel-size-individual-small);
-    height: var(--grid-pixel-size-individual-small);
-}
-.imgContainerMiddle{
-    grid-column: 2;
-    grid-row: 3;
-}
-.imgContainerMiddle input{
-    width: var(--grid-pixel-size-individual-small);
-    height: var(--grid-pixel-size-individual-small);
-}
-
-.imgContainerRight{
-    grid-column: 3;
-    grid-row: 3;
-}
-
-.imgContainerRight input{
-    width: var(--grid-pixel-size-individual-small);
-    height: var(--grid-pixel-size-individual-small);
-}
-
-.Title-container-individual{
-    grid-column: 4 / 6;
-    grid-row: 1;
-    width: 15rem;
-}
-.Title-container-individual h4{
-    text-align: start ;
-    padding-top: 10px;
-}
-.Price-container-individual{
-    grid-column: 4;
-    grid-row: 2;
-    width: 15rem;
-}
-
-.Price-container-individual h2{
-    padding-top: 182.01px;
-}
-
-.Price-container-individual button{
-    display: block;
-    width: 100%;
-    line-height: 1.4;
-    padding-left: 5px;
-    padding-right: 5px;
-    white-space: normal;
-    margin-top: 0;
-    margin-bottom: 10px;
-    min-height: 44px;
-    background-color: black;
-    
-}
-
-.Price-container-individual button span{ 
-    color:whitesmoke;
-
-}
